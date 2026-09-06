@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SRIVARSHA N | Full Stack Developer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f8f7fc;
+        }
+
+        nav {
+            background: #17152b;
+            padding: 18px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            gap: 25px;
+            margin-top: -25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav ul li a:hover {
+            color: #b9a7ff;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 70px 8%;
+            background: linear-gradient(135deg, #eee9ff, #ffffff);
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            color: #17152b;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            color: #7254d6;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            margin-right: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            background: #7254d6;
+            color: white;
+        }
+
+        .btn.secondary {
+            background: #17152b;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #17152b;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 17px;
+            color: #555;
+        }
+
+        .skills-container,
+        .projects-container,
+        .experience-container,
+        .certifications-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #7254d6;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #eee9ff;
+            color: #5037a8;
+            padding: 8px 13px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .education-box {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .education-item {
+            background: white;
+            padding: 25px;
+            margin-bottom: 18px;
+            border-left: 5px solid #7254d6;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+        }
+
+        .education-item h3 {
+            color: #17152b;
+        }
+
+        .contact {
+            text-align: center;
+            background: #eee9ff;
+        }
+
+        .contact p {
+            margin: 10px;
+        }
+
+        .contact a {
+            color: #5037a8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #17152b;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            nav ul {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero h2 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">SRIVARSHA N</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Internships</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>SRIVARSHA N</h1>
+
+        <h2>BCA Student | Full Stack Developer</h2>
+
+        <p>
+            Passionate about web development and software development,
+            with hands-on experience in Python, JavaScript, PHP, MySQL,
+            HTML and CSS.
+        </p>
+
+        <a class="btn" href="#projects">View Projects</a>
+
+        <a class="btn secondary"
+           href="https://www.linkedin.com/in/srivarsha-n-"
+           target="_blank">
+            LinkedIn
+        </a>
+
+        <a class="btn secondary"
+           href="https://github.com/vsri149-sun"
+           target="_blank">
+            GitHub
+        </a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+        <p>
+            I am a Bachelor of Computer Applications (BCA) student
+            with an interest in Full Stack Development and software
+            development. I enjoy building practical applications
+            using frontend, backend and database technologies.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="card">
+            <h3>Programming</h3>
+
+            <div class="skill-list">
+                <span class="skill">JavaScript</span>
+                <span class="skill">Python</span>
+                <span class="skill">PHP</span>
+                <span class="skill">C#</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Frontend</h3>
+
+            <div class="skill-list">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">Front-end Frameworks</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Backend & Database</h3>
+
+            <div class="skill-list">
+                <span class="skill">Back-end Frameworks</span>
+                <span class="skill">Database Management</span>
+                <span class="skill">MySQL</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="card">
+            <h3>Student Grading System</h3>
+
+            <p>
+                Developed a student grading management system using
+                HTML, CSS, PHP and MySQL for managing student details,
+                marks and grades.
+            </p>
+
+            <br>
+
+            <strong>Technologies:</strong>
+            HTML, CSS, PHP, MySQL
+        </div>
+
+        <div class="card">
+            <h3>Delivery Management System</h3>
+
+            <p>
+                Developed a delivery management system with backend
+                functionality and database integration for handling
+                delivery-related information.
+            </p>
+
+            <br>
+
+            <strong>Technologies:</strong>
+            Python, Flask, MySQL, JavaScript
+        </div>
+
+    </div>
+</section>
+
+<section id="experience">
+    <h2 class="section-title">Internship Experience</h2>
+
+    <div class="experience-container">
+
+        <div class="card">
+            <h3>Data Science Intern</h3>
+
+            <p><strong>SIIT Technologies</strong></p>
+
+            <p>April 2026 – May 2026</p>
+
+            <br>
+
+            <p>
+                Gained practical experience in data science and
+                worked with Python-based data analysis techniques.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Python Intern</h3>
+
+            <p><strong>FugenTech</strong></p>
+
+            <p>April 2025 – May 2025</p>
+
+            <br>
+
+            <p>
+                Gained practical experience in Python programming
+                and software development concepts.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="education-box">
+
+        <div class="education-item">
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+
+            <p>2024 – 2027</p>
+
+            <p>CGPA: 8.2/10</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Higher Secondary (12th)</h3>
+
+            <p>2024 | Percentage: 57.5%</p>
+        </div>
+
+        <div class="education-item">
+            <h3>SSLC (10th)</h3>
+
+            <p>2022 | Percentage: 66.4%</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="certifications-container">
+
+        <div class="card">
+            <h3>MERN: Advanced MERN Development</h3>
+
+            <p>
+                Infosys Springboard | 2026
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Full Stack Development</h3>
+
+            <p>
+                NoviTech | 2026
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Enterprise Design Thinking Practitioner</h3>
+
+            <p>
+                IBM SkillsBuild
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <p>
+        <strong>Email:</strong>
+        <a href="mailto:vsri78892@gmail.com">
+            vsri78892@gmail.com
+        </a>
+    </p>
+
+    <p>
+        <strong>Phone:</strong> 8667052902
+    </p>
+
+    <p>
+        <strong>Location:</strong> Tamil Nadu, India
+    </p>
+
+    <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/srivarsha-n-"
+           target="_blank">
+            linkedin.com/in/srivarsha-n-
+        </a>
+    </p>
+
+    <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/vsri149-sun"
+           target="_blank">
+            github.com/vsri149-sun
+        </a>
+    </p>
+</section>
+
+<footer>
+    © 2026 SRIVARSHA N. All Rights Reserved.
+</footer>
+
+</body>
+</html>
